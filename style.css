@@ -1,0 +1,350 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Miama */
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* font-family: 'Miama', sans-serif; */
+
+
+:root {
+    --color-orange: rgb(230, 83, 60);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: "Inter";
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 800;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* neeed to add style here */
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.btns {
+    margin-top: 1.75rem;
+    display: flex;
+    gap: 0.875rem;
+}
+
+
+.btn {
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    font-size: 1.125rem;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(180deg, rgb(58, 2, 2) 0%, rgba(119, 119, 119, 0) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.6rem;
+}
+
+
+nav h3 {
+    color: var(--color-orange);
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 8px 20px 8px 20px;
+}
+
+.nav-active,
+.nav-links li a:hover {
+    background-color: var(--color-orange);
+    border-radius: 46px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+/* neeed to add style here */
+.banner-content {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.banner-txt-wrapper,
+.banner-img {
+    width: 50%;
+}
+
+.banner-txt {
+    width: 520px;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner-img .model {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+}
+
+.banner-txt h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin-bottom: 1.75rem;
+}
+
+.banner-txt {
+    margin-bottom: 1.75rem;
+}
+
+.banner-txt h1 .bh-style1 {
+    font-family: 'Miama', sans-serif;
+    font-weight: 400;
+    font-size: 9.5rem !important;
+}
+
+/* neeed to add style here */
+
+.txt-box1,
+.txt-box2 {
+    width: 193px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.txt-box1 {
+    right: -5%;
+    top: 30%;
+}
+
+.txt-box2 {
+    left: 25%;
+    bottom: 13%;
+
+}
+
+.txt-box1 h3 {
+    font-size: 2.5rem;
+}
+
+.txt-box1 p {
+    font-size: 0.8rem;
+}
+
+.txt-box2 {
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.txt-box2 h3 {
+    font-style: 1.5rem;
+}
+
+.txt-box2 p {
+    font-size: 1rem;
+}
+
+.triangle {
+    width: 14.63px;
+    height: 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 25%;
+    bottom: 48%;
+}
+
+.shape {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+}
+
+.btn.btn-primary {
+    background: var(--color-orange);
+    border: 0 !important;
+}
+
+@media screen and (max-width:1600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    nav.container {
+        width: 90%;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .banner-txt {
+        width: 70%;
+    }
+
+    .banner-content {
+        flex-wrap: wrap;
+        gap: 6.25rem;
+    }
+
+    .banner-txt-wrapper {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img .model {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .txt-box1 {
+        right: 5%;
+        top: 10%;
+    }
+
+    .txt-box2 {
+        left: 0%;
+        bottom: 20%;
+    }
+
+    .triangle {
+        left: 5%;
+        bottom: 48%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .banner-txt {
+        width: 85%;
+    }
+
+    .banner-txt h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .banner-txt h1 .bh-style1 {
+        font-size: 7rem !important;
+    }
+
+    .btn {
+        padding: 15px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 90%;
+    }
+
+    .banner-txt h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .banner-txt h1 .bh-style1 {
+        font-size: 6rem !important;
+    }
+
+    .banner-img .model {
+        width: 100%;
+    }
+
+    .txt-box1,
+    .txt-box2 {
+        width: 150px;
+        height: 80px;
+    }
+
+    .txt-box1 {
+        right: 0%;
+        top: 5%;
+    }
+
+    .txt-box1 h3,
+    .txt-box2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .txt-box2 {
+        left: 0%;
+        bottom: 35%;
+        width: 180px;
+    }
+
+    .triangle {
+        display: none;
+    }
+}
