@@ -58,6 +58,8 @@ img {
     border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
     color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
 }
 
 
@@ -223,10 +225,11 @@ nav h3 {
 /* Habbits */
 .habits {
     text-align: center;
+    margin-bottom: 6.25rem;
 }
 
 .habbits-txt {
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 3.4rem;
 }
@@ -268,7 +271,43 @@ nav h3 {
 
 /* Run */
 .run {
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+
+.run-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.run-txt {
+    flex: 1;
+}
+
+
+.run-txt h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.run-txt p {
+    margin-bottom: 2.2rem;
+    max-width: 70%;
+}
+
+
+.run-img {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+}
+
+.run-img img {
+    transform: scale(2.4) translate(-10%, 10%);
+    margin: 0 auto;
 }
 
 @media screen and (max-width:1600px) {
@@ -330,6 +369,18 @@ nav h3 {
     .habbits-txt {
         width: 85%;
     }
+
+    .run-txt h2 {
+        font-size: 2.2rem;
+    }
+
+    .run-img {
+        width: 50%;
+    }
+
+    .run-txt p {
+        max-width: 90%;
+    }
 }
 
 
@@ -366,6 +417,10 @@ nav h3 {
     .btn {
         padding: 15px 20px;
         font-size: 0.8rem;
+    }
+
+    .habbits-txt h2 {
+        font-size: 2.8rem;
     }
 }
 
@@ -419,5 +474,31 @@ nav h3 {
 
     .habbits-txt h2 {
         font-size: 2rem;
+    }
+
+    .run-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .run-txt {
+        width: 100%;
+    }
+
+    .run-wrapper .btn {
+        display: block;
+        width: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .run-img {
+        width: 100%;
+        position: static;
+        border-radius: 18px;
+    }
+
+    .run-img img {
+        transform: scale(1) translate(0, 0);
     }
 }
