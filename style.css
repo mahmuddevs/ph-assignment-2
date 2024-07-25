@@ -110,7 +110,6 @@ nav h3 {
     display: none;
 }
 
-/* neeed to add style here */
 .banner-content {
     display: flex;
     align-items: center;
@@ -151,8 +150,6 @@ nav h3 {
     font-weight: 400;
     font-size: 9.5rem !important;
 }
-
-/* neeed to add style here */
 
 .txt-box1,
 .txt-box2 {
@@ -247,8 +244,8 @@ nav h3 {
 }
 
 .habit img {
-    height: 180px;
-    width: 180px;
+    height: 230px;
+    width: 230px;
     border-radius: 50%;
     margin-bottom: 1.6rem;
     border: 2px solid #202020;
@@ -273,17 +270,18 @@ nav h3 {
 .run {
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    margin-bottom: 6.25rem;
 }
 
 .run-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .run-txt {
-    flex: 1;
+    width: 45%;
 }
 
 
@@ -299,7 +297,7 @@ nav h3 {
 
 
 .run-img {
-    flex: 1;
+    width: 45%;
     overflow: hidden;
     position: relative;
     border-radius: 18px;
@@ -308,6 +306,129 @@ nav h3 {
 .run-img img {
     transform: scale(2.4) translate(-10%, 10%);
     margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* Team */
+.team {
+    margin-bottom: 5.5rem;
+}
+
+.team-txt {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.team-txt h3 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.team-gal {
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.team-card {
+    height: 326.67px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card img {
+    border-radius: 18px;
+    scale: 1.05;
+    filter: brightness(80%);
+}
+
+.team-member-desc {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.team-member-desc h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.team-member-desc p {
+    font-size: 1.1rem;
+}
+
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 3.5rem 0;
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.footer-txt h3 {
+    font-size: 4.4rem;
+    color: var(--color-orange);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+}
+
+.footer-txt p {
+    width: 80%;
+}
+
+.footer-menu.menu1 {
+    place-self: center;
+}
+
+.footer-menu.menu2 {
+    place-self: end;
+}
+
+.footer-menu h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-menu li a:hover {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom hr {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    text-align: center;
+    padding: 1.5rem 0;
 }
 
 @media screen and (max-width:1600px) {
@@ -375,11 +496,39 @@ nav h3 {
     }
 
     .run-img {
-        width: 50%;
+        width: 55%;
     }
 
     .run-txt p {
         max-width: 90%;
+    }
+
+    .run-wrapper {
+        padding: 1rem 1.2rem;
+    }
+
+
+
+
+
+
+    .team-card {
+        max-height: 300px;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+    .footer-txt {
+        grid-column: span 2;
+    }
+
+    .footer-menu.menu1,
+    .footer-menu.menu2 {
+        place-self: start;
     }
 }
 
@@ -422,11 +571,31 @@ nav h3 {
     .habbits-txt h2 {
         font-size: 2.8rem;
     }
+
+    .run-img {
+        width: 50%;
+    }
+
+    .team-gal {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        max-height: 450px;
+    }
+
+    .team-card img {
+        scale: 1;
+    }
 }
 
 @media screen and (max-width:576px) {
     .container {
         width: 90%;
+    }
+
+    .banner-txt {
+        width: 100%;
     }
 
     .banner-txt h1 {
@@ -485,6 +654,10 @@ nav h3 {
         width: 100%;
     }
 
+    .run-txt h2 {
+        font-size: 2rem;
+    }
+
     .run-wrapper .btn {
         display: block;
         width: auto;
@@ -500,5 +673,36 @@ nav h3 {
 
     .run-img img {
         transform: scale(1) translate(0, 0);
+    }
+
+    .run-wrapper {
+        padding: 1.2rem;
+    }
+
+    .team-card {
+        max-height: 280px;
+    }
+
+    .team-txt h3 {
+        font-size: 2rem;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-txt {
+        grid-column: 1;
+    }
+
+    .footer-txt p {
+        width: 100%;
+    }
+
+    .footer-menu.menu1,
+    .footer-menu.menu2 {
+        place-self: start;
     }
 }
