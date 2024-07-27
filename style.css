@@ -494,8 +494,6 @@ nav h3 {
 }
 
 .dropdown {
-    color: rgba(255, 255, 255, 0.4) !important;
-    font-weight: 300 !important;
     appearance: none;
     /* Here First Bg Color, 2nd image for arrow, 3rd no-repeat, 4th position and by how much, vertical allignment and size*/
     background: rgba(255, 255, 255, 0.1) url("images/down-chevron.png") no-repeat right 1rem center/14px !important;
