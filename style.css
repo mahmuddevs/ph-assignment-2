@@ -75,6 +75,7 @@ img {
 
 .btn-small:hover {
     color: rgba(230, 83, 60, 0.5);
+    border: 1px solid rgba(230, 83, 60, 0.5);
 }
 
 
@@ -349,15 +350,14 @@ nav h3 {
 }
 
 .workouts {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .workout {
-    width: 20%;
-    box-shadow: 2px 2px 4px 7px #202020;
+    /* width: 20%; */
+    box-shadow: 1px 1px 15px 6px rgba(92, 85, 85, 0.1);
     padding: 0.5rem;
 }
 
@@ -542,7 +542,6 @@ input[type=number] {
 }
 
 .team-card {
-    height: 326.67px;
     border-radius: 18px;
     position: relative;
     overflow: hidden;
@@ -713,6 +712,14 @@ footer {
         padding: 1rem 1.2rem;
     }
 
+    .workouts {
+        justify-content: center;
+    }
+
+    .workouts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .bmi-txt {
         width: 90%;
         margin: inherit auto;
@@ -737,11 +744,6 @@ footer {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
-
-    .team-card {
-        max-height: 300px;
-    }
-
 
     .footer-top {
         grid-template-columns: 1fr 1fr;
@@ -804,6 +806,10 @@ footer {
 
     .run-img {
         width: 50%;
+    }
+
+    .workout-txt {
+        width: 90%;
     }
 
     .team-gal {
@@ -906,8 +912,15 @@ footer {
         padding: 1.2rem;
     }
 
+
+
+    .workouts {
+        grid-template-columns: 1fr;
+    }
+
     .workout {
-        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     .workout-txt {
@@ -926,8 +939,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .team-card {
-        max-height: 280px;
+    .team-card.problem-card {
+        display: none;
     }
 
     .footer-top {
